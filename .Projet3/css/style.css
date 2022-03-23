@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+main img {
+  width: 30%;
+  height: 200px;
+  border-radius: 10px;
+  border: green solid 2px;
+}
+
+p {
+  border: solid 2px red;
+}
+
+/*# sourceMappingURL=style.css.map */

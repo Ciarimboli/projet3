@@ -1,14 +1,23 @@
 body{
     margin: 0px;
-}
-header{
     text-align: center;
     background-color: aquamarine;
-    font-size: 10px;
-    color: red;
 }
-.images{
+main img{
     width: 30%;
     height: 200px;
     border-radius: 10px;
+    border: green solid 2px;
+}
+.new img{
+    position: relative;
+}
+.new p{
+    position: absolute;
+    top: 470px;
+    right: 470px;
+    background-color:#99E2D0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #0d725a;
 }
