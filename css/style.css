@@ -1,28 +1,49 @@
 body {
   margin: 0px;
   text-align: center;
+  font-family: roboto, sans-serif;
   background-color: aquamarine;
 }
 
 main img {
-  width: 30%;
-  height: 200px;
+  width: 100%;
+  height: 150px;
   border-radius: 10px;
   border: green solid 2px;
 }
 
-.new img {
+.newone {
   position: relative;
+  height: 200px;
+  border: 2px solid violet;
 }
 
-.new p {
+.newone p {
   position: absolute;
-  top: 470px;
-  right: 470px;
+  top: 1px;
+  right: 10px;
   background-color: #99E2D0;
   padding: 5px 10px;
   border-radius: 3px;
-  color: #0d725a;
+  color: #2c9c81;
+  font-weight: 500;
+}
+
+.newtwo {
+  position: relative;
+  height: 200px;
+  border: 2px solid violet;
+}
+
+.newtwo p {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  background-color: #99E2D0;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #2c9c81;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

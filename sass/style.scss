@@ -1,23 +1,32 @@
-body{
-    margin: 0px;
-    text-align: center;
-    background-color: aquamarine;
-}
-main img{
-    width: 30%;
-    height: 200px;
-    border-radius: 10px;
-    border: green solid 2px;
-}
-.new img{
+@import "./bases/bases.scss";
+@import "./utils/color.scss";
+.newone{
     position: relative;
-}
-.new p{
+    height: 200px;
+    border: 2px solid violet;
+}   
+.newone p{
     position: absolute;
-    top: 470px;
-    right: 470px;
+    top: 1px;
+    right: 10px;
     background-color:#99E2D0;
     padding: 5px 10px;
     border-radius: 3px;
-    color: #0d725a;
+    color: darken($color-tertiary, $amount: 35%);
+    font-weight: 500;
+}
+.newtwo{
+    position: relative;
+    height: 200px;
+    border: 2px solid violet;
+}
+.newtwo p{
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    background-color:#99E2D0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: darken($color-tertiary, $amount: 35%);
+    font-weight: 500;
 }
