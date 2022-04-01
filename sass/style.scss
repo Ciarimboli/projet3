@@ -1,6 +1,9 @@
 @import "./bases/_bases.scss";
 @import "./utils/_color.scss";
 @import "./layout/_header.scss";
+@import "./layout/_city.scss";
+@import "./layout/_explorer.scss";
+@import "./utils/_mixins.scss";
 .newone{
     position: relative;
     height: 200px;
@@ -31,35 +34,39 @@
     color: darken($color-tertiary, $amount: 35%);
     font-weight: 500; 
 }
-.city{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(230, 229, 229) ;
-    margin-top: 3px;
-    & h2{
-        padding-left: 20px ;
-        font-size: 15px;
+.choice{
+    & li{
+        border: 1px solid grey;
+        padding: 20px 5px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        font-weight: 500;
+        @include box-shadow;
+        list-style-type: none;
+        position: relative;
+        &:hover{
+            @include transform;
+            background-color: rgb(238, 225, 238);
+            i{
+                color: $color-primary;
+            }
+        }
     }
-}
-.explorer{
-    background-color: rgb(238, 238, 238);
-    padding-top: 20px;
-    padding-bottom: 50px;
+    & i{
+        padding-right: 20px;
+    }
+    & span{
+        padding: 5px 10px;
+        background-color: $color-primary;
+        color: white;
+        border-radius: 50px;
+        position: absolute;
+        left: -14px;
+        bottom: 15px;
 
-    & h2{
-    font-size: 18px;
-    }
-    & p{
-    font-size: 15px;
-    }
-    & button{
-    background-image: linear-gradient($color-secondary, $color-primary);
-    color: white ;
-    padding: 10px 20px;
-    border-radius: 50px;
-    border:none
     }
 }
+
+
 
 

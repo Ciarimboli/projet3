@@ -23,6 +23,42 @@ header {
   box-shadow: 0px 1px 3px 1px gray;
 }
 
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e5e5;
+  margin-top: 3px;
+}
+.city h2 {
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.explorer {
+  background-color: #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.explorer h2 {
+  font-size: 18px;
+}
+.explorer p {
+  font-size: 15px;
+}
+.explorer button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 2px 1px 15px 1px black;
+}
+.explorer button:hover {
+  transform: scale(1.1);
+  transition: 400ms;
+}
+
 .newone {
   position: relative;
   height: 200px;
@@ -57,35 +93,35 @@ header {
   font-weight: 500;
 }
 
-.city {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e6e5e5;
-  margin-top: 3px;
+.choice li {
+  border: 1px solid grey;
+  padding: 20px 5px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  font-weight: 500;
+  box-shadow: 2px 1px 15px 1px black;
+  list-style-type: none;
+  position: relative;
 }
-.city h2 {
-  padding-left: 20px;
-  font-size: 15px;
+.choice li:hover {
+  transform: scale(1.1);
+  transition: 400ms;
+  background-color: #eee1ee;
 }
-
-.explorer {
-  background-color: #eeeeee;
-  padding-top: 20px;
-  padding-bottom: 50px;
+.choice li:hover i {
+  color: #9356DC;
 }
-.explorer h2 {
-  font-size: 18px;
+.choice i {
+  padding-right: 20px;
 }
-.explorer p {
-  font-size: 15px;
-}
-.explorer button {
-  background-image: linear-gradient(#FF79DA, #9356DC);
+.choice span {
+  padding: 5px 10px;
+  background-color: #9356DC;
   color: white;
-  padding: 10px 20px;
   border-radius: 50px;
-  border: none;
+  position: absolute;
+  left: -14px;
+  bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

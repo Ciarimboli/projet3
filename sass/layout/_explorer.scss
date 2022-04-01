@@ -1,0 +1,24 @@
+@import "../utils/_mixins.scss";
+.explorer{
+    background-color: rgb(238, 238, 238);
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+    & h2{
+    font-size: 18px;
+    }
+    & p{
+    font-size: 15px;
+    }
+    & button{
+    background-image: linear-gradient($color-secondary, $color-primary);
+    color: white ;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border:none;
+    @include box-shadow;
+        &:hover{
+            @include transform
+        }
+    }
+}

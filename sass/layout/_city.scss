@@ -1,0 +1,11 @@
+.city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 229, 229) ;
+    margin-top: 3px;
+    & h2{
+        padding-left: 20px ;
+        font-size: 15px;
+    }
+}
