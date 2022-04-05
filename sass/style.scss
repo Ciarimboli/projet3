@@ -4,11 +4,12 @@
 @import "./layout/_city.scss";
 @import "./layout/_explorer.scss";
 @import "./utils/_mixins.scss";
+@import "./layout/choice.scss";
+@import "./layout/footer.scss";
 .newone{
     position: relative;
-    height: 200px;
-    border: 2px solid violet;
-}   
+    height: 150px;
+}  
 .newone p{
     position: absolute;
     top: 1px;
@@ -21,7 +22,7 @@
 }
 .newtwo{
     position: relative;
-    height: 200px;
+    height: 150px;
     border: 2px solid violet;
 }
 .newtwo p{
@@ -34,38 +35,32 @@
     color: darken($color-tertiary, $amount: 35%);
     font-weight: 500; 
 }
-.choice{
-    & li{
-        border: 1px solid grey;
-        padding: 20px 5px;
+.list{   
+    background-color: rgb(238, 238, 238);
+   & h2{
+        font-size: 25px;
+        text-align: left;
+        margin-left: 40px;
+   }
+   & .card{
+        border: 2px solid red;
+        width: 80% ;
         margin-bottom: 20px;
-        border-radius: 15px;
-        font-weight: 500;
-        @include box-shadow;
-        list-style-type: none;
-        position: relative;
-        &:hover{
-            @include transform;
-            background-color: rgb(238, 225, 238);
-            i{
-                color: $color-primary;
-            }
-        }
-    }
-    & i{
-        padding-right: 20px;
-    }
-    & span{
-        padding: 5px 10px;
-        background-color: $color-primary;
-        color: white;
-        border-radius: 50px;
-        position: absolute;
-        left: -14px;
-        bottom: 15px;
+        border-radius: 20px;
+   } 
+   & .cardtext{
+       border: green solid 2px;
+       display: flex;
 
-    }
+       & h3, p{
+           color: black;
+       }
+
+   } 
 }
+
+
+
 
 
 
