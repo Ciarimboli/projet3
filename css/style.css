@@ -35,6 +35,32 @@ header {
   font-size: 15px;
 }
 
+.propose {
+  display: flex;
+  align-items: center;
+}
+.propose p {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+.propose i {
+  padding-bottom: 10px;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+}
+.partner p {
+  padding-left: 10px;
+  margin: 0px;
+}
+.partner i {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
 .explorer {
   background-color: #eeeeee;
   padding-top: 20px;
@@ -57,6 +83,32 @@ header {
 .explorer button:hover {
   transform: scale(1.1);
   transition: 400ms;
+}
+
+.propose {
+  display: flex;
+  align-items: center;
+}
+.propose p {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+.propose i {
+  padding-bottom: 10px;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+}
+.partner p {
+  padding-left: 10px;
+  margin: 0px;
+}
+.partner i {
+  font-size: 12px;
+  padding-bottom: 10px;
 }
 
 .choice h2 {
@@ -103,25 +155,17 @@ footer {
   padding-left: 20px;
   background-color: black;
   color: white;
+  padding-bottom: 30px;
 }
-
-.propose {
-  display: flex;
-  align-items: center;
+footer h2 {
+  font-family: Shrikhand, sans serif;
+  margin: 0px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
-.propose p {
-  padding-left: 10px;
-}
-
-.partner {
-  display: flex;
-  align-items: center;
-}
-.partner p {
-  padding-left: 10px;
-}
-.partner i {
-  font-size: 12px;
+footer p {
+  margin: 0px;
+  padding-bottom: 10px;
 }
 
 .newone {
@@ -129,11 +173,12 @@ footer {
   height: 150px;
 }
 
-.newone p {
+.newone span {
   position: absolute;
   top: 1px;
   right: 10px;
   background-color: #99E2D0;
+  margin-top: 15px;
   padding: 5px 10px;
   border-radius: 3px;
   color: #2c9c81;
@@ -146,11 +191,12 @@ footer {
   border: 2px solid violet;
 }
 
-.newtwo p {
+.newtwo span {
   position: absolute;
   top: 1px;
   right: 10px;
   background-color: #99E2D0;
+  margin-top: 15px;
   padding: 5px 10px;
   border-radius: 3px;
   color: #2c9c81;
@@ -159,11 +205,15 @@ footer {
 
 .list {
   background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .list h2 {
   font-size: 25px;
   text-align: left;
   margin-left: 40px;
+  align-self: flex-start;
 }
 .list .card {
   border: 2px solid red;
@@ -174,9 +224,21 @@ footer {
 .list .cardtext {
   border: green solid 2px;
   display: flex;
+  flex-direction: column;
 }
-.list .cardtext h3, .list .cardtext p {
+.list h3, .list p {
   color: black;
+  align-self: flex-start;
+  padding-left: 30px;
+}
+.list i {
+  align-self: flex-end;
+  font-size: 20px;
+  padding-right: 30px;
+  color: black;
+}
+.list i :active {
+  color: pink;
 }
 
 /*# sourceMappingURL=style.css.map */

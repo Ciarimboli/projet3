@@ -1,0 +1,6 @@
+@import "./utils/_mixins.scss";
+@import "./layout/_header.scss";
+@import "./bases/_bases.scss";
+footer{
+    @include footer
+}
