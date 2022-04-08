@@ -5,6 +5,17 @@
     transform: scale(1.1);
     transition: 400ms;
 }
+@mixin headercards{
+    & .logo{
+        width: 43%;
+        height: 30px;
+        margin-top: 15px;  
+        margin-bottom: 10px; 
+    }
+    & i{
+        justify-content: flex-start;
+    }
+}
 @mixin footer{
     text-align: left;
     padding-left: 20px;
@@ -47,7 +58,8 @@
     }
 }
 @mixin heart{
-    :active{
-        color: pink;
+    background-color: aqua;
+    &:active{
+        background-color: pink;
     }
 }

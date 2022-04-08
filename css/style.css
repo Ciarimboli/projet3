@@ -12,6 +12,11 @@ main img {
   border: green solid 2px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .logo {
   width: 43%;
   height: 30px;
@@ -175,10 +180,9 @@ footer p {
 
 .newone span {
   position: absolute;
-  top: 1px;
+  top: 15px;
   right: 10px;
   background-color: #99E2D0;
-  margin-top: 15px;
   padding: 5px 10px;
   border-radius: 3px;
   color: #2c9c81;
@@ -217,7 +221,7 @@ footer p {
 }
 .list .card {
   border: 2px solid red;
-  width: 80%;
+  width: 90%;
   margin-bottom: 20px;
   border-radius: 20px;
 }
@@ -236,9 +240,10 @@ footer p {
   font-size: 20px;
   padding-right: 30px;
   color: black;
+  background-color: aqua;
 }
-.list i :active {
-  color: pink;
+.list i:active {
+  background-color: pink;
 }
 
 /*# sourceMappingURL=style.css.map */

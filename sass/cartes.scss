@@ -1,6 +1,13 @@
 @import "./utils/_mixins.scss";
-@import "./layout/_header.scss";
 @import "./bases/_bases.scss";
+header{
+    @include headercards
+}
+.menus h3{
+    text-decoration: underline green ;
+    width: 40%;
+    font-weight: 300;
+}
 footer{
     @include footer
 }
