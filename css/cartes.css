@@ -43,20 +43,42 @@ a {
   color: black;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 header .logo {
   width: 43%;
   height: 30px;
   margin-top: 15px;
   margin-bottom: 10px;
-}
-header i {
-  justify-content: flex-start;
+  margin-left: 90px;
 }
 
+main {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
 .menus h3 {
   text-decoration: underline green;
   width: 40%;
   font-weight: 300;
+}
+
+.descriptionmenus {
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
