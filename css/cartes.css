@@ -43,6 +43,19 @@ a {
   color: black;
 }
 
+button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 2px 1px 15px 1px black;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: 400ms;
+}
+
 header {
   display: flex;
   align-items: center;

@@ -1,5 +1,7 @@
 @import "./utils/_mixins.scss";
 @import "./bases/_bases.scss";
+@import "./utils/color.scss";
+@import "./components/buttons.scss";
 header{
     @include headercards
 }
