@@ -16,6 +16,7 @@
         @include box-shadow;
         list-style-type: none;
         position: relative;
+        text-align: left;
         &:hover{
             @include transform;
             background-color: rgb(238, 225, 238);
@@ -26,6 +27,7 @@
     }
     & i{
         padding-right: 20px;
+        padding-left: 40px;
     }
     & span{
         padding: 5px 10px;

@@ -69,6 +69,19 @@ header .logo {
   margin-left: 90px;
 }
 
+.containermenus {
+  display: flex;
+  align-items: center;
+}
+.containermenus h1 {
+  font-family: shrikhand, sans-serif;
+  width: 100%;
+}
+.containermenus h1 i {
+  font-size: 100px;
+  margin-left: 150px;
+}
+
 main {
   background-color: #eeeeee;
   display: flex;
@@ -88,10 +101,38 @@ main {
 }
 
 .descriptionmenus {
+  display: flex;
+  justify-content: space-between;
   background-color: white;
   border: 2px solid red;
   border-radius: 20px;
   margin-bottom: 20px;
+}
+.descriptionmenus .food {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+.descriptionmenus .food h2 {
+  margin: 0px;
+  padding-top: 15px;
+}
+.descriptionmenus .food p {
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.descriptionmenus .price {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.commander {
+  padding: 15px 40px;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 footer {

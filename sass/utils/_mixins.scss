@@ -17,6 +17,34 @@
         margin-left: 90px;
     }
 }
+@mixin descriptionmenus {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    & .food{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 15px;
+        & h2{
+            margin: 0px;
+            padding-top: 15px;
+        }
+        & p{
+            margin: 0px;
+            padding-top: 5px;
+            padding-bottom: 15px;
+        }
+    }
+    & .price{
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+    }
+}
 @mixin footer{
     text-align: left;
     padding-left: 20px;

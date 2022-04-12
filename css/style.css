@@ -78,16 +78,7 @@ header {
   font-size: 15px;
 }
 .explorer button {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  border: none;
-  box-shadow: 2px 1px 15px 1px black;
-}
-.explorer button:hover {
-  transform: scale(1.1);
-  transition: 400ms;
+  margin-top: 25px;
 }
 
 .propose {
@@ -133,6 +124,7 @@ header {
   box-shadow: 2px 1px 15px 1px black;
   list-style-type: none;
   position: relative;
+  text-align: left;
 }
 .choice li:hover {
   transform: scale(1.1);
@@ -144,6 +136,7 @@ header {
 }
 .choice i {
   padding-right: 20px;
+  padding-left: 40px;
 }
 .choice span {
   padding: 5px 10px;
@@ -171,6 +164,19 @@ footer h2 {
 footer p {
   margin: 0px;
   padding-bottom: 10px;
+}
+
+button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 2px 1px 15px 1px black;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: 400ms;
 }
 
 .newone {

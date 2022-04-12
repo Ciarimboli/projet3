@@ -5,6 +5,20 @@
 header{
     @include headercards
 }
+.containermenus{
+    display: flex;
+    align-items: center;
+    & h1{
+        font-family: shrikhand, sans-serif;
+        width: 100%;
+    & i{
+        font-size: 100px;
+        margin-left: 150px;
+    }
+    }
+
+
+}
 main{
     background-color: rgb(238, 238,238); 
     display: flex; 
@@ -22,12 +36,19 @@ main{
     font-weight: 300;
     }
 }
-.descriptionmenus {
-    background-color: white;
-    border: 2px solid red;
-    border-radius: 20px;
-    margin-bottom: 20px;
+.descriptionmenus{
+    @include descriptionmenus
+}
+
+    
+
+    
+
+.commander{
+    padding: (15px 40px);
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 footer{
-    @include footer
+    @include footer;
 }
