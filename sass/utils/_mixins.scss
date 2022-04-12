@@ -41,8 +41,17 @@
     }
     & .price{
         display: flex;
-        align-items: center;
+        align-items: flex-end;
+        padding-bottom: 18px;
         padding-right: 30px;
+    }
+    & i{
+        color:red;
+        background-color: $color-tertiary;
+        padding: 10px;
+        width: 65px;
+        height: 65px;
+        border-radius: 0px 18px 18px 0px;
     }
 }
 @mixin footer{
