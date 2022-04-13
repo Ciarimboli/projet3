@@ -32,9 +32,9 @@ body {
 main img {
   width: 100%;
   height: 200px;
-  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
   border: green solid 2px;
+  position: relative;
 }
 
 a {
@@ -69,23 +69,31 @@ header .logo {
 }
 
 .containermenus {
-  width: 87%;
+  width: 100%;
   display: flex;
   align-items: center;
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 180px;
+  border-radius: 20px 20px 0px 0px;
+  border: 2px solid maroon;
+  background-color: #eeeeee;
 }
 .containermenus h1 {
   width: 80%;
   font-family: shrikhand, sans-serif;
+  padding-left: 40px;
+  margin: 0px;
 }
 .containermenus i {
   font-size: 35px;
 }
 
 main {
-  background-color: #eeeeee;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #eeeeee;
 }
 
 .menus {
@@ -94,8 +102,9 @@ main {
   width: 90%;
 }
 .menus h3 {
-  text-decoration: underline green;
-  width: 40%;
+  border-bottom: 4px solid #99E2D0;
+  padding-bottom: 8px;
+  width: 6%;
   font-weight: 300;
 }
 
