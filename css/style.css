@@ -5,7 +5,7 @@ body {
 
 main img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
   border: green solid 2px;
@@ -24,6 +24,7 @@ a {
 }
 
 header {
+  text-align: center;
   box-shadow: 0px 1px 3px 1px gray;
 }
 
@@ -69,6 +70,7 @@ header {
   background-color: #eeeeee;
   padding-top: 20px;
   padding-bottom: 50px;
+  text-align: center;
 }
 .explorer h2 {
   font-size: 18px;
@@ -180,7 +182,7 @@ button:hover {
 
 .newone {
   position: relative;
-  height: 150px;
+  height: 200px;
 }
 
 .newone span {
@@ -196,8 +198,7 @@ button:hover {
 
 .newtwo {
   position: relative;
-  height: 150px;
-  border: 2px solid violet;
+  height: 200px;
 }
 
 .newtwo span {
@@ -233,22 +234,27 @@ button:hover {
 .list .cardtext {
   border: green solid 2px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  width: 90%;
 }
-.list h3, .list p {
+.list h3 {
   color: black;
-  align-self: flex-start;
   padding-left: 30px;
+  margin: 0px;
+}
+.list p {
+  margin: 0px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 .list i {
-  align-self: flex-end;
-  font-size: 20px;
-  padding-right: 30px;
+  font-size: 25px;
+  font-weight: 100;
+  padding-bottom: 15px;
   color: black;
-  background-color: aqua;
-}
-.list i:active {
-  background-color: pink;
 }
 
 /*# sourceMappingURL=style.css.map */
