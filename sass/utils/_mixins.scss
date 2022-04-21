@@ -24,50 +24,57 @@
     border: 2px solid red;
     border-radius: 20px;
     margin-bottom: 20px;
+    padding-left: 15px;
     & .food{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-left: 15px;
+        width: 60%;
         & h2{
             margin: 0px;
             padding-top: 15px;
+            width: 90%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            box-sizing: border-box;
+            font-size: 15px;
         }
         & p{
             margin: 0px;
             padding-top: 5px;
-            padding-bottom: 15px;
+            width: 90%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            box-sizing: border-box;
         }
     }
     & .price{
         display: flex;
-        align-items: flex-end;
-        padding-bottom: 18px;
-        padding-right: 30px;
+        align-items: center;
+        width: 20%;
     }
     & .bloc{
-        display: flex;
-        justify-content: flex-end ;
-        width: 90px;
-        height: 83px;
+        height: 70px;
         background-color: $color-tertiary;
         border-radius: 0px 18px 18px 0px;
+        width: 20%;
         & i{
-        margin-top: 30px;
-        margin-right: 30px;
-        margin-bottom: 29px;
-        color: $color-tertiary;
-        border: 1px solid $color-tertiary;
-        background-color: $color-white;
-        padding: 4px;
-        border-radius: 50px;
-            }
+            margin-top: 23px;
+            margin-left: 30%;
+            color: $color-tertiary;
+            border: 1px solid $color-tertiary;
+            padding: 4px;
+            background-color: $color-white;
+            border-radius: 50px;
+        }
     }
 }
 @mixin footer{
     text-align: left;
     padding-left: 20px;
-    background-color: black;
+    background-color: rgb(59, 53, 53);
     color: white;
     padding-bottom: 30px;
     & h2{
@@ -103,11 +110,5 @@
     & i{
         font-size: 12px;
         padding-bottom: 10px;
-    }
-}
-@mixin heart{
-    background-color: aqua;
-    &:active{
-        background-color: pink;
     }
 }

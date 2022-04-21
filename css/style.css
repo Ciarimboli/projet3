@@ -8,6 +8,7 @@ main img {
   height: 200px;
   object-fit: cover;
   border: green solid 2px;
+  border-radius: 20px 20px 0px 0px;
   position: relative;
 }
 
@@ -17,7 +18,7 @@ a {
 }
 
 .logo {
-  width: 43%;
+  width: 50%;
   height: 30px;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -77,6 +78,7 @@ header {
 }
 .explorer p {
   font-size: 15px;
+  font-weight: 100;
 }
 .explorer button {
   margin-top: 25px;
@@ -120,7 +122,7 @@ header {
   padding: 20px 5px;
   margin-bottom: 20px;
   border-radius: 15px;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 500;
   box-shadow: 2px 1px 15px 1px black;
   list-style-type: none;
@@ -136,8 +138,8 @@ header {
   color: #9356DC;
 }
 .choice i {
-  padding-right: 20px;
-  padding-left: 40px;
+  padding-right: 15px;
+  padding-left: 30px;
 }
 .choice span {
   padding: 5px 10px;
@@ -152,7 +154,7 @@ header {
 footer {
   text-align: left;
   padding-left: 20px;
-  background-color: black;
+  background-color: #3b3535;
   color: white;
   padding-bottom: 30px;
 }
@@ -232,7 +234,7 @@ button:hover {
   border-radius: 20px;
 }
 .list .cardtext {
-  border: green solid 2px;
+  border: purple solid 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -241,21 +243,35 @@ button:hover {
 }
 .list h3 {
   color: black;
+  font-size: 15px;
   padding-left: 30px;
   margin: 0px;
 }
 .list p {
+  font-size: 15px;
   margin: 0px;
   padding-left: 30px;
   padding-top: 5px;
   padding-bottom: 15px;
 }
 .list i {
-  font-size: 25px;
-  font-weight: 100;
+  font-size: 20px;
+}
+.list .list i {
   padding-bottom: 15px;
-  color: black;
-  background-clip: linear-gradient(#FF79DA, #9356DC);
+  font-weight: 400;
+  background: linear-gradient(black black);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: opacity 250ms;
+}
+.list i:hover {
+  font-weight: 600;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

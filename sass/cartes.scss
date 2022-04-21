@@ -18,7 +18,8 @@ header{
     & h1{
         width: 80%;
         font-family: shrikhand, sans-serif;
-        padding-left: 40px; 
+        font-size: 23px;
+        padding-left: 10px; 
     }
     & i{
         font-size: 35px;
@@ -32,7 +33,7 @@ main{
 
 }
 .starter{
-    margin-top: 120px;
+    margin-top: 150px;
 }
 .menus{
     display: flex;
@@ -41,7 +42,7 @@ main{
     & h3{
     border-bottom: 4px solid $color-tertiary;
     padding-bottom: 8px;
-    width: 6%;
+    width: 45px;
     font-weight: 300;
     }
 }
