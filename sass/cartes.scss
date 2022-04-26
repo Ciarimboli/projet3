@@ -23,7 +23,7 @@ header{
     & i{
         font-size: 25px;
         padding-bottom: 5px;
-        padding-right: 30px;
+        padding-right: 35px;
     }
 .containermenus i{
     font-weight: 400;
@@ -46,7 +46,6 @@ main{
     flex-direction: column;  
     align-items: center;
     background-color: rgb(238, 238, 238);
-
 }
 .starter{
     margin-top: 80px;
@@ -64,9 +63,35 @@ main{
     font-size: 15px;
     }
 }
+.menus a{
+    & .price{
+        transform: translate(65px);
+        transition:transform 1000ms ease-in-out ;
+        padding-right: 40px;
+    }
+    & .bloc{
+        transform: translate(65px);
+        transition: transform 1000ms ease-in-out;
+        & i{
+            transform: rotate(180px);
+            transition: transform 1000ms ease-in-out;
+        }
+    }
+}
+.menus a:hover{
+    & .price{
+        transform: translate(0px);
+    }
+    & .bloc{
+        transform: translate(0px);
+        & i{
+            transform: rotate(180px); 
+        }
+    }
+}
 .descriptionmenus{
-    @include descriptionmenus
-}  
+    @include descriptionmenus;
+}
 .commander{
     padding: (15px 40px);
     margin-top: 50px;

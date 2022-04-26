@@ -89,7 +89,7 @@ header i {
 .containermenus i {
   font-size: 25px;
   padding-bottom: 5px;
-  padding-right: 30px;
+  padding-right: 35px;
 }
 .containermenus .containermenus i {
   font-weight: 400;
@@ -132,6 +132,30 @@ main {
   font-size: 15px;
 }
 
+.menus a .price {
+  transform: translate(65px);
+  transition: transform 1000ms ease-in-out;
+  padding-right: 40px;
+}
+.menus a .bloc {
+  transform: translate(65px);
+  transition: transform 1000ms ease-in-out;
+}
+.menus a .bloc i {
+  transform: rotate(180px);
+  transition: transform 1000ms ease-in-out;
+}
+
+.menus a:hover .price {
+  transform: translate(0px);
+}
+.menus a:hover .bloc {
+  transform: translate(0px);
+}
+.menus a:hover .bloc i {
+  transform: rotate(180px);
+}
+
 .descriptionmenus {
   display: flex;
   justify-content: space-between;
@@ -139,6 +163,8 @@ main {
   border-radius: 20px;
   margin-bottom: 20px;
   padding-left: 15px;
+  border: 2px solid red;
+  overflow: hidden;
 }
 .descriptionmenus .food {
   display: flex;
@@ -164,11 +190,12 @@ main {
   text-overflow: ellipsis;
   overflow: hidden;
   box-sizing: border-box;
-  font-size: 11px;
+  font-size: 15px;
 }
 .descriptionmenus .price {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: 17%;
   font-size: 13px;
   padding-top: 23px;
@@ -178,11 +205,6 @@ main {
   background-color: #99E2D0;
   border-radius: 0px 18px 18px 0px;
   width: 17%;
-  transform: scaleX(1);
-}
-.descriptionmenus .bloc :hover {
-  transform: scaleX(0);
-  transition: transform 1000ms;
 }
 .descriptionmenus .bloc i {
   margin-top: 20px;

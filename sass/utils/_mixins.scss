@@ -26,6 +26,8 @@
     border-radius: 20px;
     margin-bottom: 20px;
     padding-left: 15px;
+    border: 2px solid red;
+    overflow: hidden;
     & .food{
         display: flex;
         flex-direction: column;
@@ -49,12 +51,13 @@
             text-overflow: ellipsis;
             overflow: hidden;
             box-sizing: border-box;
-            font-size: 11px;
+            font-size: 15px;
         }
     }
     & .price{
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         width: 17%;
         font-size: 13px;
         padding-top: 23px;
@@ -64,11 +67,6 @@
         background-color: $color-tertiary;
         border-radius: 0px 18px 18px 0px;
         width: 17%;
-        transform: scaleX(1);
-        & :hover{
-            transform: scaleX(0);
-            transition: transform 1000ms;
-        }
         & i{
             margin-top: 20px;
             margin-left: 30%;
