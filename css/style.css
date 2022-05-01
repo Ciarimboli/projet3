@@ -215,24 +215,12 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: heart 500ms;
+  animation: heart 1000ms;
 }
 @keyframes heart {
   0% {
     font-weight: 200;
     opacity: 0;
-  }
-  25% {
-    font-weight: 300;
-    opacity: 0.25;
-  }
-  50% {
-    font-weight: 400;
-    opacity: 0.5;
-  }
-  75% {
-    font-weight: 500;
-    opacity: 0.75;
   }
   100% {
     font-weight: 600;

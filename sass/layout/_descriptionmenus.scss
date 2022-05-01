@@ -7,6 +7,18 @@
     padding-left: 15px;
     border: 2px solid red;
     overflow: hidden;
+    animation: descriptionmenus 2000ms;
+    @keyframes descriptionmenus {
+        0%{
+            transform: translateY(50%);
+            opacity: 0;
+        }
+        100%{
+            transform: translate(0%);
+            opacity: 1;
+        }
+        
+    }
     & .food{
         display: flex;
         flex-direction: column;
