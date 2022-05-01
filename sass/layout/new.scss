@@ -1,0 +1,29 @@
+.newone{
+    position: relative;
+    height: 200px;
+}  
+.newone span{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    background-color:#99E2D0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: darken($color-tertiary, $amount: 35%);
+    font-weight: 500;
+}
+.newtwo{
+    position: relative;
+    height: 200px;
+}
+.newtwo span{
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    background-color:#99E2D0;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: darken($color-tertiary, $amount: 35%);
+    font-weight: 500; 
+}

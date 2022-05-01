@@ -37,32 +37,6 @@ header {
   font-size: 15px;
 }
 
-.propose {
-  display: flex;
-  align-items: center;
-}
-.propose p {
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin: 0px;
-}
-.propose i {
-  padding-bottom: 10px;
-}
-
-.partner {
-  display: flex;
-  align-items: center;
-}
-.partner p {
-  padding-left: 10px;
-  margin: 0px;
-}
-.partner i {
-  font-size: 12px;
-  padding-bottom: 10px;
-}
-
 .explorer {
   background-color: #eeeeee;
   padding-top: 20px;
@@ -78,32 +52,6 @@ header {
 }
 .explorer button {
   margin-top: 25px;
-}
-
-.propose {
-  display: flex;
-  align-items: center;
-}
-.propose p {
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin: 0px;
-}
-.propose i {
-  padding-bottom: 10px;
-}
-
-.partner {
-  display: flex;
-  align-items: center;
-}
-.partner p {
-  padding-left: 10px;
-  margin: 0px;
-}
-.partner i {
-  font-size: 12px;
-  padding-bottom: 10px;
 }
 
 .choice h2 {
@@ -164,6 +112,30 @@ footer p {
   margin: 0px;
   padding-bottom: 10px;
 }
+footer .propose {
+  display: flex;
+  align-items: center;
+}
+footer .propose p {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+footer .propose i {
+  padding-bottom: 10px;
+}
+footer .partner {
+  display: flex;
+  align-items: center;
+}
+footer .partner p {
+  padding-left: 10px;
+  margin: 0px;
+}
+footer .partner i {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
 
 button {
   background-image: linear-gradient(#FF79DA, #9356DC);
@@ -178,37 +150,10 @@ button:hover {
   transition: 400ms;
 }
 
-.newone {
-  position: relative;
-  height: 200px;
-}
-
-.newone span {
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  background-color: #99E2D0;
-  padding: 5px 10px;
-  border-radius: 3px;
-  color: #2c9c81;
-  font-weight: 500;
-}
-
-.newtwo {
-  position: relative;
-  height: 200px;
-}
-
-.newtwo span {
-  position: absolute;
-  top: 1px;
-  right: 10px;
-  background-color: #99E2D0;
-  margin-top: 15px;
-  padding: 5px 10px;
-  border-radius: 3px;
-  color: #2c9c81;
-  font-weight: 500;
+.commander {
+  padding: 15px 40px;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 .list {
@@ -270,6 +215,62 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  animation: heart 500ms;
+}
+@keyframes heart {
+  0% {
+    font-weight: 200;
+    opacity: 0;
+  }
+  25% {
+    font-weight: 300;
+    opacity: 0.25;
+  }
+  50% {
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  75% {
+    font-weight: 500;
+    opacity: 0.75;
+  }
+  100% {
+    font-weight: 600;
+    opacity: 1;
+  }
+}
+
+.newone {
+  position: relative;
+  height: 200px;
+}
+
+.newone span {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-color: #99E2D0;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #2c9c81;
+  font-weight: 500;
+}
+
+.newtwo {
+  position: relative;
+  height: 200px;
+}
+
+.newtwo span {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  background-color: #99E2D0;
+  margin-top: 15px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #2c9c81;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

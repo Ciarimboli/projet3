@@ -1,0 +1,59 @@
+.containermenus{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding-top: 20px;
+    margin-top: 180px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(238, 238, 238);
+    & h1{
+        font-family: shrikhand, sans-serif;
+        font-size: 23px;
+        padding-left: 10px;
+    }
+    & i{
+        font-size: 25px;
+        padding-bottom: 5px;
+        padding-right: 35px;
+    }
+.containermenus i{
+    font-weight: 400;
+    background: linear-gradient(black black);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: opacity 250ms
+    }
+    & i:hover{
+        font-weight: 600;
+        background: linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: heart 500ms;
+    }
+    @keyframes heart {
+        0%{
+            font-weight: 200;
+            opacity: 0;
+        }
+        25%{
+            font-weight: 300;
+            opacity: 0.25;
+        }
+        50%{
+            font-weight: 400;
+            opacity: 0.5;
+        }
+        75%{
+            font-weight: 500;
+            opacity: 0.75;
+        }
+        100%{
+            font-weight: 600;
+            opacity: 1;
+        }    
+    }
+}

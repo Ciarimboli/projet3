@@ -1,0 +1,12 @@
+.menus{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    & h3{
+    border-bottom: 4px solid $color-tertiary;
+    padding-bottom: 8px;
+    width: 35px;
+    font-weight: 300;
+    font-size: 15px;
+    }
+}
