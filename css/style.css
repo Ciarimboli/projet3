@@ -215,16 +215,18 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: heart 1000ms;
+  animation: heart 500ms;
 }
 @keyframes heart {
   0% {
     font-weight: 200;
-    opacity: 0;
+    opacity: 1;
+    scale: 1;
   }
   100% {
     font-weight: 600;
     opacity: 1;
+    scale: 1.2;
   }
 }
 
@@ -259,6 +261,46 @@ button:hover {
   border-radius: 3px;
   color: #2c9c81;
   font-weight: 500;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  inset: 0px;
+  z-index: 1;
+  animation-name: loading;
+  animation: loading 1s forwards;
+  animation-delay: 3s;
+}
+@keyframes loading {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+  }
+}
+.loader p {
+  border: 10px solid transparent;
+  border-left: transparent;
+  border-top: 10px solid #FF79DA;
+  color: transparent;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  animation: border 1s linear infinite;
+}
+@keyframes border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

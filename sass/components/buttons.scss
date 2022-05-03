@@ -1,9 +1,9 @@
 button{
     background-image: linear-gradient($color-secondary, $color-primary);
-        color: white ;
-        padding: 10px 20px;
-        border-radius: 50px;
-        border:none;
+    color: white ;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border:none;
         @include box-shadow;
             &:hover{
                 @include transform

@@ -70,16 +70,18 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: heart 1000ms;
+  animation: heart 500ms;
 }
 @keyframes heart {
   0% {
     font-weight: 200;
     opacity: 0;
+    scale: 1;
   }
   100% {
     font-weight: 600;
     opacity: 1;
+    scale: 1.2;
   }
 }
 
@@ -116,7 +118,6 @@ main {
   margin-bottom: 20px;
   padding-left: 15px;
   border: 2px solid red;
-  overflow: hidden;
   animation: descriptionmenus 2000ms;
 }
 @keyframes descriptionmenus {
@@ -140,12 +141,20 @@ main {
   padding-top: 10px;
   width: 100%;
   font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .descriptionmenus .food p {
   margin: 0px;
   padding-top: 5px;
   width: 100%;
   font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .descriptionmenus .price {
   display: flex;
@@ -156,9 +165,9 @@ main {
   padding-top: 20px;
 }
 .descriptionmenus .bloc {
-  background-color: #99E2D0;
+  background-color: chocolate;
+  border: green 2px solid;
   height: 55px;
-  width: 0%;
   border-radius: 0px 18px 18px 0px;
 }
 .descriptionmenus .bloc i {
@@ -170,12 +179,6 @@ main {
   background-color: white;
   border-radius: 50px;
   font-size: 12px;
-}
-.descriptionmenus:hover .food h2, .descriptionmenus:hover p {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  box-sizing: border-box;
 }
 .descriptionmenus:hover .price {
   transform: translate(-65px);

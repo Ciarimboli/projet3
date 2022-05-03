@@ -6,7 +6,6 @@
     margin-bottom: 20px;
     padding-left: 15px;
     border: 2px solid red;
-    overflow: hidden;
     animation: descriptionmenus 2000ms;
     @keyframes descriptionmenus {
         0%{
@@ -16,8 +15,7 @@
         100%{
             transform: translate(0%);
             opacity: 1;
-        }
-        
+        }   
     }
     & .food{
         display: flex;
@@ -29,12 +27,20 @@
             padding-top: 10px;
             width: 100%;
             font-size: 12px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            box-sizing: border-box;
         }
         & p{
             margin: 0px;
             padding-top: 5px;
             width: 100%;
-            font-size: 12px;   
+            font-size: 12px;  
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            box-sizing: border-box;
         }
     }
     & .price{
@@ -46,9 +52,9 @@
         padding-top: 20px;
     }
     & .bloc{
-        background-color: $color-tertiary;
+        background-color: chocolate;
+        border: green 2px solid;
         height: 55px;
-        width: 0%;
         border-radius: 0px 18px 18px 0px;
         & i{
             margin-top: 20px; 
@@ -62,15 +68,9 @@
         }
     }
     &:hover{
-        & .food h2, p{
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            box-sizing: border-box;
-        }
         & .price{
             transform: translate(-65px);
-            transition: transform 1000ms ease-in-out;
+            transition: transform 1000ms ease-in-out;    
         }
         & .bloc{
             transform: translate(-65px);
