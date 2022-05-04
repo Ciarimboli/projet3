@@ -117,7 +117,7 @@ main {
   border-radius: 20px;
   margin-bottom: 20px;
   padding-left: 15px;
-  border: 2px solid red;
+  overflow: hidden;
   animation: descriptionmenus 2000ms;
 }
 @keyframes descriptionmenus {
@@ -135,12 +135,16 @@ main {
   flex-direction: column;
   align-items: flex-start;
   width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .descriptionmenus .food h2 {
   margin: 0px;
   padding-top: 10px;
-  width: 100%;
   font-size: 12px;
+  width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -149,8 +153,8 @@ main {
 .descriptionmenus .food p {
   margin: 0px;
   padding-top: 5px;
-  width: 100%;
   font-size: 12px;
+  width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -162,35 +166,56 @@ main {
   justify-content: center;
   width: 20%;
   font-size: 12px;
-  padding-top: 20px;
+  padding-top: 25px;
+  transition: transform 600ms ease-in-out;
 }
 .descriptionmenus .bloc {
-  background-color: chocolate;
-  border: green 2px solid;
-  height: 55px;
+  background-color: #99E2D0;
+  height: 50px;
+  width: 60px;
+  margin-right: -65px;
   border-radius: 0px 18px 18px 0px;
+  transition: transform 600ms ease-in-out;
 }
 .descriptionmenus .bloc i {
-  margin-top: 20px;
-  margin-left: 30%;
+  margin-top: 15px;
+  margin-left: 33%;
   color: #99E2D0;
   border: 1px solid #99E2D0;
   padding: 3px 4px;
   background-color: white;
   border-radius: 50px;
   font-size: 12px;
+  transition: transform 600ms ease-in-out;
+}
+.descriptionmenus:hover .food {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 60%;
+}
+.descriptionmenus:hover .food h2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.descriptionmenus:hover .food p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .descriptionmenus:hover .price {
   transform: translate(-65px);
-  transition: transform 1000ms ease-in-out;
+  padding-left: 65px;
 }
 .descriptionmenus:hover .bloc {
   transform: translate(-65px);
-  transition: transform 1000ms ease-in-out;
 }
 .descriptionmenus:hover .bloc i {
   transform: rotate(360deg);
-  transition: transform 1000ms ease-in-out;
 }
 
 header {

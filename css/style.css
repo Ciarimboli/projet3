@@ -303,4 +303,29 @@ button:hover {
   }
 }
 
+@media (min-width: 768px) {
+  .choice ol {
+    display: flex;
+  }
+
+  .choice li {
+    width: 30%;
+    margin: 0px 20px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .list h2 {
+    width: 100%;
+  }
+
+  .list .card {
+    width: 45%;
+    margin-left: 3%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

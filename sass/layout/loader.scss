@@ -1,0 +1,39 @@
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    inset: 0px;
+    z-index: 1;
+    animation-name: loading;
+    animation: loading 1s forwards;
+    animation-delay: 3s;
+    @keyframes loading {
+        0%{
+            scale: 1;
+        }
+        100%{
+            scale: 0;
+        }
+    }
+    & p{
+        border: 10px solid transparent;
+        border-left: transparent;
+        border-top: 10px solid $color-secondary;
+        color: transparent;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;  
+        animation: border 1s linear infinite;
+    }
+    @keyframes border {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}

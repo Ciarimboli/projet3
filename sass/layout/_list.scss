@@ -4,19 +4,19 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 40px;
-   & h2{
+    & h2{
         font-size: 25px;
         text-align: left;
         margin-left: 40px;
         align-self: flex-start;
-   }   
-   & .card{
+    }   
+    & .card{
         width: 90% ;
         margin-bottom: 20px;
         border-radius: 20px;
         background-color: white;
-   } 
-   & .cardtext{
+    }
+    & .cardtext{
        display: flex;
        align-items: center;
        justify-content: space-between;
