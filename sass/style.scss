@@ -10,27 +10,7 @@
 @import "./layout/list.scss";
 @import "./layout/new.scss";
 @import "./layout/loader.scss";
-@media (min-width: 768px) {
-    .choice ol{
-        display: flex;
-    }
-    .choice li{
-        width: 30%;
-        margin: 0px 20px;
-    }
-    .list{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        & h2{
-            width: 100%;
-        }
-    }
-    .list .card{
-        width: 45%;
-        margin-left: 3%;
-    }
-}
+@import "./layout/mediaqueries.scss";
 
 
 

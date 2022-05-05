@@ -218,6 +218,50 @@ main {
   transform: rotate(360deg);
 }
 
+@media (min-width: 768px) {
+  .choice ol {
+    display: flex;
+  }
+
+  .choice li {
+    width: 30%;
+    margin: 0px 20px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .list h2 {
+    width: 100%;
+  }
+
+  .list .card {
+    width: 45%;
+    margin-left: 3%;
+  }
+}
+@media (min-width: 768px) {
+  .menucard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .starter {
+    margin-top: 15px;
+  }
+
+  .menus {
+    width: 30%;
+  }
+
+  .descriptionmenus {
+    width: 90%;
+  }
+}
 header {
   display: flex;
   align-items: center;
