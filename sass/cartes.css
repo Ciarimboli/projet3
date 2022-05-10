@@ -6,7 +6,8 @@ body {
 main img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px 20px 0px 0px;
   position: relative;
 }
@@ -44,7 +45,7 @@ button:hover {
   padding-top: 20px;
   margin-top: 180px;
   border-radius: 20px 20px 0px 0px;
-  background-color: #eeeeee;
+  background-color: rgb(238, 238, 238);
 }
 .containermenus h1 {
   font-family: shrikhand, sans-serif;
@@ -70,7 +71,21 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: heart 1000ms;
+  -webkit-animation: heart 1000ms;
+          animation: heart 1000ms;
+}
+@-webkit-keyframes heart {
+  0% {
+    font-weight: 600;
+  }
+  1% {
+    font-weight: 600;
+    opacity: 0.4;
+  }
+  100% {
+    font-weight: 600;
+    opacity: 1;
+  }
 }
 @keyframes heart {
   0% {
@@ -90,7 +105,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eeeeee;
+  background-color: rgb(238, 238, 238);
 }
 
 .starter {
@@ -111,7 +126,7 @@ main {
   font-size: 15px;
 }
 
-.descriptionmenus, .descriptionmenus1, .descriptionmenus2, .descriptionmenus3 {
+.descriptionmenus {
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -119,7 +134,18 @@ main {
   margin-bottom: 20px;
   padding-left: 15px;
   overflow: hidden;
-  animation: descriptionmenus 2000ms;
+  -webkit-animation: descriptionmenus 2000ms;
+          animation: descriptionmenus 2000ms;
+}
+@-webkit-keyframes descriptionmenus {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%);
+    opacity: 1;
+  }
 }
 @keyframes descriptionmenus {
   0% {
@@ -131,7 +157,7 @@ main {
     opacity: 1;
   }
 }
-.descriptionmenus .food, .descriptionmenus1 .food, .descriptionmenus2 .food, .descriptionmenus3 .food {
+.descriptionmenus .food {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -141,7 +167,7 @@ main {
   overflow: hidden;
   box-sizing: border-box;
 }
-.descriptionmenus .food h2, .descriptionmenus1 .food h2, .descriptionmenus2 .food h2, .descriptionmenus3 .food h2 {
+.descriptionmenus .food h2 {
   margin: 0px;
   padding-top: 10px;
   font-size: 12px;
@@ -151,7 +177,7 @@ main {
   overflow: hidden;
   box-sizing: border-box;
 }
-.descriptionmenus .food p, .descriptionmenus1 .food p, .descriptionmenus2 .food p, .descriptionmenus3 .food p {
+.descriptionmenus .food p {
   margin: 0px;
   padding-top: 5px;
   font-size: 12px;
@@ -161,7 +187,7 @@ main {
   overflow: hidden;
   box-sizing: border-box;
 }
-.descriptionmenus .price, .descriptionmenus1 .price, .descriptionmenus2 .price, .descriptionmenus3 .price {
+.descriptionmenus .price {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,7 +196,7 @@ main {
   padding-top: 25px;
   transition: transform 600ms ease-in-out;
 }
-.descriptionmenus .bloc, .descriptionmenus1 .bloc, .descriptionmenus2 .bloc, .descriptionmenus3 .bloc {
+.descriptionmenus .bloc {
   background-color: #99E2D0;
   height: 50px;
   width: 60px;
@@ -178,7 +204,7 @@ main {
   border-radius: 0px 18px 18px 0px;
   transition: transform 600ms ease-in-out;
 }
-.descriptionmenus .bloc i, .descriptionmenus1 .bloc i, .descriptionmenus2 .bloc i, .descriptionmenus3 .bloc i {
+.descriptionmenus .bloc i {
   margin-top: 15px;
   margin-left: 33%;
   color: #99E2D0;
@@ -189,55 +215,34 @@ main {
   font-size: 12px;
   transition: transform 600ms ease-in-out;
 }
-.descriptionmenus:hover .food, .descriptionmenus1:hover .food, .descriptionmenus2:hover .food, .descriptionmenus3:hover .food {
+.descriptionmenus:hover .food {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   box-sizing: border-box;
   width: 60%;
 }
-.descriptionmenus:hover .food h2, .descriptionmenus1:hover .food h2, .descriptionmenus2:hover .food h2, .descriptionmenus3:hover .food h2 {
+.descriptionmenus:hover .food h2 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   box-sizing: border-box;
 }
-.descriptionmenus:hover .food p, .descriptionmenus1:hover .food p, .descriptionmenus2:hover .food p, .descriptionmenus3:hover .food p {
+.descriptionmenus:hover .food p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   box-sizing: border-box;
 }
-.descriptionmenus:hover .price, .descriptionmenus1:hover .price, .descriptionmenus2:hover .price, .descriptionmenus3:hover .price {
+.descriptionmenus:hover .price {
   transform: translate(-65px);
   padding-left: 65px;
-  padding-right: 0px;
 }
-.descriptionmenus:hover .bloc, .descriptionmenus1:hover .bloc, .descriptionmenus2:hover .bloc, .descriptionmenus3:hover .bloc {
+.descriptionmenus:hover .bloc {
   transform: translate(-65px);
 }
-.descriptionmenus:hover .bloc i, .descriptionmenus1:hover .bloc i, .descriptionmenus2:hover .bloc i, .descriptionmenus3:hover .bloc i {
+.descriptionmenus:hover .bloc i {
   transform: rotate(360deg);
-}
-
-.descriptionmenus {
-  animation-delay: 0ms;
-  animation-fill-mode: backwards;
-}
-
-.descriptionmenus1 {
-  animation-delay: 250ms;
-  animation-fill-mode: backwards;
-}
-
-.descriptionmenus2 {
-  animation-delay: 500ms;
-  animation-fill-mode: backwards;
-}
-
-.descriptionmenus3 {
-  animation-delay: 750ms;
-  animation-fill-mode: backwards;
 }
 
 @media (min-width: 768px) {
@@ -265,6 +270,10 @@ main {
   }
 }
 @media (min-width: 768px) {
+  .menucard {
+    margin-top: 80px;
+  }
+
   .starter {
     margin-top: 15px;
   }
@@ -274,23 +283,7 @@ main {
   }
 
   .descriptionmenus {
-    width: 95%;
-  }
-}
-.menucard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .menucard {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 80px;
+    width: 90%;
   }
 }
 header {
@@ -311,7 +304,7 @@ footer {
   text-align: left;
   padding-left: 20px;
   padding-bottom: 30px;
-  background-color: #3b3535;
+  background-color: rgb(59, 53, 53);
   color: white;
 }
 footer h2 {
@@ -349,4 +342,9 @@ footer .partner i {
   padding-bottom: 10px;
 }
 
-/*# sourceMappingURL=cartes.css.map */
+.menucard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}/*# sourceMappingURL=cartes.css.map */

@@ -24,7 +24,7 @@
     background-clip: border-box;
     -webkit-background-clip: text;
     color: transparent;
-    transition: opacity 250ms
+    transition: opacity 1000ms
     }
     & i:hover{
         font-weight: 600;
@@ -32,18 +32,21 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        animation: heart 500ms;
+        animation: heart 1000ms;
     }
     @keyframes heart {
         0%{
-            font-weight: 200;
-            opacity: 0;
-            scale: 1;
+            font-weight: 600;
+        }
+        1%{
+            font-weight: 600;
+            opacity: 0.4;
+            
         }
         100%{
             font-weight: 600;
             opacity: 1;
-            scale: 1.2;
+            
         }    
     }
 }

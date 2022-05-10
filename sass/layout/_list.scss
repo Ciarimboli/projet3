@@ -40,34 +40,31 @@
             font-size: 25px;
             padding-bottom: 25px;
             padding-right: 1px;
+            padding-bottom: 15px;
+            font-weight: 400;
+            background: linear-gradient(black black);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            color: black;
+            transition: tranform opacity 2000ms;
         }
-.list i{
-    padding-bottom: 15px;
-    font-weight: 400;
-    background: linear-gradient(black black);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: opacity 250ms;
+        & i:hover{
+            background: linear-gradient($color-primary, $color-secondary);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: heart 2000ms;
+        } 
+        @keyframes heart {
+            0%{
+                font-weight: 600;
+            }
+            1%{
+                opacity: 0.4;
+            }
+            100%{
+                font-weight: 600;
+                opacity: 1;
+            }
+        } 
     }
-    & i:hover{
-        font-weight: 600;
-        background: linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        animation: heart 500ms;
-    } 
-    @keyframes heart {
-        0%{
-            font-weight: 200;
-            opacity: 1;
-            scale: 1;
-        }
-        100%{
-            font-weight: 600;
-            opacity: 1;
-            scale: 1.2;
-        }
-    } 
-}

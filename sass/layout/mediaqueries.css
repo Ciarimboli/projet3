@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+  .choice ol {
+    display: flex;
+  }
+
+  .choice li {
+    width: 30%;
+    margin: 0px 20px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .list h2 {
+    width: 100%;
+  }
+
+  .list .card {
+    width: 45%;
+    margin-left: 3%;
+  }
+}
+@media (min-width: 768px) {
+  .menucard {
+    margin-top: 80px;
+  }
+
+  .starter {
+    margin-top: 15px;
+  }
+
+  .menus {
+    width: 30%;
+  }
+
+  .descriptionmenus {
+    width: 90%;
+  }
+}/*# sourceMappingURL=mediaqueries.css.map */

@@ -5,9 +5,10 @@
 @import "./layout/containermenuscards.scss";
 @import "./layout/maincards.scss";
 @import "./layout/startercards.scss";
-@import "./layout/menuscards.scss";
+@import "./layout/menus.scss";
 @import "./layout/descriptionmenus.scss";
 @import "./layout/mediaqueries.scss";
+@import "./layout/menucard.scss";
 header{
     @include headercards
 }

@@ -1,4 +1,4 @@
-.descriptionmenus{
+.descriptionmenus, .descriptionmenus1, .descriptionmenus2, .descriptionmenus3{
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -97,7 +97,8 @@
         }
         & .price{
             transform: translate(-65px);
-            padding-left: 65px;    
+            padding-left: 65px; 
+            padding-right: 0px;   
         }
         & .bloc{
             transform: translate(-65px); 
@@ -106,4 +107,20 @@
             }
         }
     }
+}
+.descriptionmenus{
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
+}
+.descriptionmenus1{
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+}
+.descriptionmenus2{
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+}
+.descriptionmenus3{
+    animation-delay: 750ms;
+    animation-fill-mode: backwards;
 }
