@@ -83,7 +83,7 @@ header {
 }
 .choice i {
   padding-right: 15px;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 .choice span {
   padding: 5px 10px;
@@ -201,7 +201,7 @@ button:hover {
   padding-right: 1px;
   padding-bottom: 15px;
   font-weight: 400;
-  background: linear-gradient(black black);
+  background-color: black;
   background-clip: border-box;
   -webkit-background-clip: text;
   color: black;
@@ -334,6 +334,14 @@ button:hover {
 
   .descriptionmenus {
     width: 95%;
+  }
+
+  .menucard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 80px;
   }
 }
 

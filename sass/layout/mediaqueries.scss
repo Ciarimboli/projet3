@@ -29,5 +29,11 @@
     .descriptionmenus{
         width: 95%;
     }
+    .menucard{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:flex-start;
+        margin-top: 80px;
+    }
 }
-

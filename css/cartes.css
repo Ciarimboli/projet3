@@ -240,6 +240,13 @@ main {
   animation-fill-mode: backwards;
 }
 
+.menucard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .choice ol {
     display: flex;
@@ -276,15 +283,7 @@ main {
   .descriptionmenus {
     width: 95%;
   }
-}
-.menucard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
 
-@media (min-width: 768px) {
   .menucard {
     display: flex;
     flex-direction: row;
