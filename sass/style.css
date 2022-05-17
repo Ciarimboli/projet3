@@ -202,11 +202,11 @@ button:hover {
   padding-right: 1px;
   padding-bottom: 15px;
   font-weight: 400;
-  background: linear-gradient(black black);
+  background-color: black;
   background-clip: border-box;
   -webkit-background-clip: text;
   color: black;
-  transition: tranform opacity 2000ms;
+  transition: tranform 2000ms;
 }
 .list i:hover {
   background: linear-gradient(#9356DC, #FF79DA);
